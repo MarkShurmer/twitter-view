@@ -17,7 +17,6 @@ app.get("/cnnbrk-tweets", (req, res, next) => {
     fetchTweets()
         .then((result) => {
             const extractedData = extractData(result.data);
-            console.log('@@@@ ', extractedData)
 
             const markup = renderToString(
                 <App data={extractedData}/>

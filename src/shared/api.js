@@ -18,7 +18,6 @@ function fetchTweets() {
 function extractData(data) {
     // extract the data items we want
 
-    console.log('££££ ', data)
     if(data && data.statuses) {
         return data.statuses.map(item => {
             return {
