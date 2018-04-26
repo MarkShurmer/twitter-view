@@ -1,0 +1,37 @@
+.tweet-list {
+}
+
+.tweet {
+    border: 1px solid blue;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: inline-block;
+    height: 7rem;
+    box-sizing: border-box;
+    background-color: #d3d3d333;
+}
+
+.tweet-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.tweet-time {
+    margin: 0.5rem 0.1rem 0.1rem 0.1rem;
+    font-size: small;
+}
+
+@media screen and (max-width: 600px) {
+    .tweet {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    .tweet {
+        width: 48%;
+    }
+}
